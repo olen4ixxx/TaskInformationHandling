@@ -75,13 +75,12 @@ public class TextComposite implements CompositeComponent {
     public String toString() { // TODO: 09.11.2021
 //        logger.info("TextComposite: toString()");
         StringBuilder builder = new StringBuilder();
-        if (this.type == TextCompositeType.SENTENCE) { // FIXME: 10.11.2021
-            builder.append("\t");
-        }
+//        if (this.type == TextCompositeType.SENTENCE) { // FIXME: 10.11.2021
+//            builder.append("\t");
+//        }
         for (var e:components) {
             builder.append(e);
         }
-        builder.append(getType().getDelimiter());
         return builder.toString();
     }
 }

@@ -133,6 +133,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/parser/impl/TextParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/reader/CustomReader.java">
           <value>
             <set />

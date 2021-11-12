@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SentenceParser implements TextParser {
     private static final Logger logger = LogManager.getLogger();
-    private static final String SENTENCE_DELIMITER = "(?=[.!?…](\s|$))"; // fixme: 09.11.2021
+    private static final String SENTENCE_DELIMITER = "(?=[.!?…]\s|$)"; // fixme: 09.11.2021
     public final TextParser parser;
 
     public SentenceParser() {
@@ -25,7 +25,7 @@ public class SentenceParser implements TextParser {
         List<String> sentences = Arrays
                 .stream(text.split(SENTENCE_DELIMITER))
                 .filter(o -> !o.isBlank())
-                .map(String::trim)
+//                .map(String::trim)
                 .toList();
         CompositeComponent sentenceComposite = new TextComposite(TextCompositeType.SENTENCE);
         for (String sentence : sentences) {
