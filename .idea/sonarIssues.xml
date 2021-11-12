@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/a.dummy">
           <value>
             <set />
@@ -188,7 +193,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/ParagraphService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/SearchService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/SentenceService.java">
           <value>
             <set />
           </value>
@@ -204,6 +219,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/SymbolService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/TextService.java">
           <value>
             <set />
           </value>
@@ -233,6 +253,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/impl/SentenceCountDeleteSearchService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/impl/SentenceDeleteService.java">
           <value>
             <set />
@@ -249,6 +274,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/impl/SymbolCountService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/service/impl/TextSearchCountService.java">
           <value>
             <set />
           </value>

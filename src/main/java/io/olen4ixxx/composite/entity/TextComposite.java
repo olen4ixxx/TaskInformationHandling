@@ -81,7 +81,7 @@ public class TextComposite implements CompositeComponent {
         for (var e:components) {
             builder.append(e);
         }
-//        builder.append(getType().getDelimiter());
+        builder.append(getType().getDelimiter());
         return builder.toString();
     }
 }

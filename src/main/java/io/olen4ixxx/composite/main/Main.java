@@ -1,23 +1,13 @@
 package io.olen4ixxx.composite.main;
 
-import io.olen4ixxx.composite.entity.CompositeComponent;
-import io.olen4ixxx.composite.entity.SymbolType;
 import io.olen4ixxx.composite.entity.TextComposite;
 import io.olen4ixxx.composite.exception.CustomCompositeException;
 import io.olen4ixxx.composite.parser.impl.LexemeParser;
 import io.olen4ixxx.composite.parser.impl.ParagraphParser;
 import io.olen4ixxx.composite.parser.TextParser;
 import io.olen4ixxx.composite.parser.impl.SentenceParser;
-import io.olen4ixxx.composite.parser.impl.SymbolParser;
 import io.olen4ixxx.composite.reader.CustomReader;
 import io.olen4ixxx.composite.reader.impl.CompositeFileReader;
-import io.olen4ixxx.composite.service.CountService;
-import io.olen4ixxx.composite.service.DeleteService;
-import io.olen4ixxx.composite.service.SearchService;
-import io.olen4ixxx.composite.service.SymbolService;
-import io.olen4ixxx.composite.service.impl.*;
-
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws CustomCompositeException {

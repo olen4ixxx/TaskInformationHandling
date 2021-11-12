@@ -1,9 +1,8 @@
 package io.olen4ixxx.composite.parser.impl;
 
 import io.olen4ixxx.composite.entity.CompositeComponent;
-import io.olen4ixxx.composite.entity.SymbolType;
-import io.olen4ixxx.composite.entity.TextCompositeType;
 import io.olen4ixxx.composite.entity.TextComposite;
+import io.olen4ixxx.composite.entity.TextCompositeType;
 import io.olen4ixxx.composite.parser.TextParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,7 +12,7 @@ import java.util.List;
 
 public class LexemeParser implements TextParser {
     private static final Logger logger = LogManager.getLogger();
-    private static final String LEXEME_DELIMITER = "(?=[\s])";
+    private static final String LEXEME_DELIMITER = "\s";
     public final TextParser parser;
 
     public LexemeParser() {

@@ -2,7 +2,6 @@ package io.olen4ixxx.composite.service.impl;
 
 import io.olen4ixxx.composite.entity.CompositeComponent;
 import io.olen4ixxx.composite.entity.TextComposite;
-import io.olen4ixxx.composite.service.SearchService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,11 +9,10 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class SentenceSearchService implements SearchService {
+public class SentenceSearchService {
     private static final Logger logger = LogManager.getLogger();
     private static final String PUNCTUATION_REGEX = "[,.!?…]";
 
-    @Override
     public List<CompositeComponent> find(CompositeComponent sentenceComposite) {
         var sentences = (TextComposite) sentenceComposite;
         List<CompositeComponent> sentenceComponents = sentences.getComponents();

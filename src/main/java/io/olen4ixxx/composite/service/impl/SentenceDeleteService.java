@@ -2,17 +2,16 @@ package io.olen4ixxx.composite.service.impl;
 
 import io.olen4ixxx.composite.entity.CompositeComponent;
 import io.olen4ixxx.composite.entity.TextComposite;
-import io.olen4ixxx.composite.service.DeleteService;
+import io.olen4ixxx.composite.service.SentenceService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
-public class SentenceDeleteService implements DeleteService {
+public class SentenceDeleteService {
     private static final Logger logger = LogManager.getLogger();
     private static final String DASH_REGEX = "\u2014\s";
 
-    @Override
     public void delete(CompositeComponent sentenceComposite, int wordNumber) {
         var sentences = (TextComposite) sentenceComposite;
         List<CompositeComponent> sentenceComponents = sentences.getComponents();

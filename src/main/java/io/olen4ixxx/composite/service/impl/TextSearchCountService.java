@@ -2,17 +2,15 @@ package io.olen4ixxx.composite.service.impl;
 
 import io.olen4ixxx.composite.entity.CompositeComponent;
 import io.olen4ixxx.composite.entity.TextComposite;
-import io.olen4ixxx.composite.exception.CustomCompositeException;
-import io.olen4ixxx.composite.service.CountService;
-import io.olen4ixxx.composite.service.SearchService;
+import io.olen4ixxx.composite.service.TextService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class WordSearchCountService implements SearchService, CountService {
+public class TextSearchCountService implements TextService {
 
     @Override
-    public List<CompositeComponent> find(CompositeComponent compositeComponent) {
+    public List<CompositeComponent> findRepeatedWords(CompositeComponent compositeComponent) {
         var lexemes = (TextComposite) compositeComponent;
         List<CompositeComponent> lexemeComponents = lexemes.getComponents();
         List<CompositeComponent> repeatedWords = new ArrayList<>();
@@ -39,7 +37,7 @@ public class WordSearchCountService implements SearchService, CountService {
     }
 
     @Override
-    public int count(CompositeComponent compositeComponent) {
-        return find(compositeComponent).size();
+    public int countRepeatedWords(CompositeComponent compositeComponent) {
+        return findRepeatedWords(compositeComponent).size();
     }
 }
