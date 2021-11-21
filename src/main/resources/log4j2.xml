@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status = "info">
+<Configuration status="info">
     <Properties>
         <property name="LOG_DIR">logs</property>
         <property name="ARCHIVE_LOG_DIR">${LOG_DIR}/archive</property>
@@ -13,7 +13,7 @@
             <PatternLayout pattern="${pattern_console}"/>
         </Console>
         <RollingFile name="FileRolling" fileName="${LOG_DIR}/text_roll.log" append="true"
-                    filePattern="${LOG_DIR}/${date:yyyy-MM-dd}/%d{yyyy-MM-dd_HH-mm}_%i.log">
+                     filePattern="${LOG_DIR}/${date:yyyy-MM-dd}/%d{yyyy-MM-dd_HH-mm}_%i.log">
             <PatternLayout pattern="${pattern_file}"/>
             <Policies>
                 <SizeBasedTriggeringPolicy size="10 KB"/>

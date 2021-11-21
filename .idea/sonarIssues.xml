@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../PreTaskNumbers/src/main/java/io/olen4ixxx/pretask/service/Operation.java">
           <value>
             <set />
@@ -64,6 +69,126 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/entity/TextCompositeType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/AbstractExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/AbstractOperation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/BitwiseOperation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/BitwiseOperationType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/BitwiseParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/Context.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/ExpressionParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/MathExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/MathOperation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/NonTerminalExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/NotExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/NotParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/Str.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/TerminalExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/AndExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/LeftShiftExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/NonTerminalExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/NotExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/OrExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/RightShiftExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/TerminalExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreter/implexpr/XorExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/io/olen4ixxx/composite/interpreterNOTDONE/AbstractOperation.java">
           <value>
             <set />
           </value>
@@ -314,6 +439,91 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/files/text.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/log4j2.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/parser/impl/LexemeParserTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/parser/impl/ParagraphParserTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/parser/impl/SentenceParserTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/parser/impl/SymbolParserTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/reader/impl/CompositeFileReaderTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/service/impl/ParagraphSortServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/service/impl/SentenceCountDeleteSearchServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/io/olen4ixxx/composite/service/impl/TextSearchCountServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/files/testText.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/src/main/java/io/olen4ixxx/ship/entity/Pier.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/src/main/java/io/olen4ixxx/ship/entity/Port.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/src/main/java/io/olen4ixxx/ship/entity/Ship.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/src/main/java/io/olen4ixxx/ship/exception/ShipException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/src/main/java/io/olen4ixxx/ship/reader/CustomReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../TaskMultithreading/src/main/java/io/olen4ixxx/ship/reader/impl/CompositeFileReader.java">
           <value>
             <set />
           </value>

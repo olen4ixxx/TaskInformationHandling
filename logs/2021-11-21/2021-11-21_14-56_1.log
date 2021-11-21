@@ -1,0 +1,66 @@
+21-11-2021 14:15:56 [TestNG-method=testSortByNumberOfSentences-1] ERROR olen4ixxx.composite.reader.impl.CompositeFileReader - File is not found (files/testParagraphsSortedText.txt)
+21-11-2021 14:16:20 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testText.txt)
+21-11-2021 14:16:20 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:16:20 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testParagraphsSortedText.txt)
+21-11-2021 14:16:20 [TestNG-method=testSortByNumberOfSentences-1] ERROR olen4ixxx.composite.reader.impl.CompositeFileReader - File is not found (files/testParagraphsSortedText.txt)
+21-11-2021 14:18:55 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testText.txt)
+21-11-2021 14:18:55 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:18:55 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testParagraphsSortedText.txt)
+21-11-2021 14:18:55 [TestNG-method=testSortByNumberOfSentences-1] ERROR olen4ixxx.composite.reader.impl.CompositeFileReader - File is not found (files/testParagraphsSortedText.txt)
+21-11-2021 14:20:44 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testText.txt)
+21-11-2021 14:20:44 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:20:44 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/t.txt)
+21-11-2021 14:20:44 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:20:44 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:20:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.service.impl.ParagraphSortService - ParagraphSortService: sortByNumberOfSentences()
+21-11-2021 14:20:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testText.txt)
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.service.impl.ParagraphSortService - ParagraphSortService: sortByNumberOfSentences()
+21-11-2021 14:22:45 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testUnsortedText.txt)
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.service.impl.ParagraphSortService - ParagraphSortService: sortByNumberOfSentences()
+21-11-2021 14:25:11 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testUnsortedText.txt)
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.service.impl.ParagraphSortService - ParagraphSortService: sortByNumberOfSentences()
+21-11-2021 14:25:30 [TestNG-method=testSortByNumberOfSentences-1] INFO  olen4ixxx.composite.parser.impl.ParagraphParser - ParagraphParser: parse()
+21-11-2021 14:43:09 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/text.txt)
+21-11-2021 14:43:09 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:43:45 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:43:45 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:44:58 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:44:58 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:46:03 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:46:03 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:46:22 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:46:22 [TestNG-method=testReadLines-1] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:53:55 [main] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:53:55 [main] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:53:56 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:01 [main] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - CompositeFileReader: readLines(files/testSortedText.txt)
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.reader.impl.CompositeFileReader - File is read
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()
+21-11-2021 14:56:02 [main] INFO  olen4ixxx.composite.service.impl.SentenceCountDeleteSearchService - SentenceCountDeleteSearchService: countSymbols()

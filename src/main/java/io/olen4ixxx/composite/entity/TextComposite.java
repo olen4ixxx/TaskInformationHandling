@@ -1,15 +1,10 @@
 package io.olen4ixxx.composite.entity;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class TextComposite implements CompositeComponent {
-    private static final Logger logger = LogManager.getLogger();
     private List<CompositeComponent> components;
     private final TextCompositeType type;
 
@@ -50,8 +45,8 @@ public class TextComposite implements CompositeComponent {
         }
         TextComposite composite = (TextComposite) o;
         Object[] array = components.toArray();
-        Object[] array1 = composite.components.toArray(); // FIXME: 10.11.2021
-        return Arrays.deepEquals(array, array1) && type == composite.type;
+        Object[] array1 = composite.components.toArray();
+        return type == composite.type && Arrays.deepEquals(array, array1);
     }
 
     @Override
@@ -67,19 +62,29 @@ public class TextComposite implements CompositeComponent {
     }
 
     @Override
-    public int hashCode() { // TODO: 09.11.2021  
-        return Objects.hash(components);
+    public int hashCode() {
+        int prime = 31;
+        int result = 1;
+        for (CompositeComponent component : components) {
+            result = prime * result + (component == null ? 0 : component.hashCode());
+        }
+        return result + type.hashCode();
     }
 
     @Override
-    public String toString() { // TODO: 09.11.2021
-//        logger.info("TextComposite: toString()");
+    public String toString() {
         StringBuilder builder = new StringBuilder();
-//        if (this.type == TextCompositeType.SENTENCE) { // FIXME: 10.11.2021
-//            builder.append("\t");
-//        }
-        for (var e:components) {
-            builder.append(e);
+        if (this.type == TextCompositeType.SENTENCE) {
+            builder.append("\t");
+        }
+        for (CompositeComponent component : components) {
+            builder.append(component);
+        }
+        if (this.type == TextCompositeType.SYMBOL) {
+            builder.append("\s");
+        }
+        if (this.type == TextCompositeType.SENTENCE) {
+            builder.append("\r\n");
         }
         return builder.toString();
     }

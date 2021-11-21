@@ -9,8 +9,8 @@ public class ParagraphNumberOfSentencesComparator implements Comparator<Composit
 
     @Override
     public int compare(CompositeComponent o1, CompositeComponent o2) {
-        var c1 = (TextComposite) o1; // TODO: 11.11.2021  
-        var c2 = (TextComposite) o2;
-        return c1.getComponents().size() - c2.getComponents().size();
+        var tc1 = (TextComposite) o1;
+        var tc2 = (TextComposite) o2;
+        return tc1.getComponents().size() - tc2.getComponents().size();
     }
 }

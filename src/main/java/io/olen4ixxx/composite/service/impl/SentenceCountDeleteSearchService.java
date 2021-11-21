@@ -3,6 +3,8 @@ package io.olen4ixxx.composite.service.impl;
 import io.olen4ixxx.composite.entity.CompositeComponent;
 import io.olen4ixxx.composite.entity.SymbolType;
 import io.olen4ixxx.composite.entity.TextComposite;
+import io.olen4ixxx.composite.entity.TextCompositeType;
+import io.olen4ixxx.composite.exception.CustomCompositeException;
 import io.olen4ixxx.composite.service.SentenceService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,13 +15,18 @@ import java.util.List;
 
 public class SentenceCountDeleteSearchService implements SentenceService {
     private static final Logger logger = LogManager.getLogger();
-    private static final String DASH_REGEX = "\u2014\s"; // FIXME: 12.11.2021
+    private static final String DASH_REGEX = "\u2014";
 
     @Override
-    public int countSymbols(CompositeComponent sentenceComponent, SymbolType symbolType) {
-        var sentence = (TextComposite) sentenceComponent;
-        List<CompositeComponent> lexemes = sentence.getComponents();
+    public int countSymbols(CompositeComponent sentencesComposite, SymbolType symbolType)
+            throws CustomCompositeException {
+        logger.info("SentenceCountDeleteSearchService: countSymbols()");
+        if (!(sentencesComposite instanceof TextComposite sentences)
+                || sentences.getType() != TextCompositeType.LEXEME) {
+            throw new CustomCompositeException("Input CompositeComponent is not a SENTENCE");
+        }
         int consonantsNumber = 0;
+        List<CompositeComponent> lexemes = sentences.getComponents();
         for (var lexeme : lexemes) {
             var lexemeComponent = (TextComposite) lexeme;
             List<CompositeComponent> symbols = lexemeComponent.getComponents();
@@ -33,8 +40,12 @@ public class SentenceCountDeleteSearchService implements SentenceService {
     }
 
     @Override
-    public void deleteSentencesShorterThan(CompositeComponent sentenceComposite, int wordNumber) {
-        var sentences = (TextComposite) sentenceComposite;
+    public void deleteSentencesShorterThan(CompositeComponent sentencesComposite, int wordNumber) throws CustomCompositeException {
+        logger.info("SentenceCountDeleteSearchService: deleteSentencesShorterThan()");
+        if (!(sentencesComposite instanceof TextComposite sentences)
+                || sentences.getType() != TextCompositeType.SENTENCE) {
+            throw new CustomCompositeException("Input CompositeComponent is not a SENTENCE");
+        }
         List<CompositeComponent> sentenceComponents = sentences.getComponents();
         int k = 0;
         while (k < sentenceComponents.size()) {
@@ -52,27 +63,34 @@ public class SentenceCountDeleteSearchService implements SentenceService {
 
     private int dashCount(List<CompositeComponent> lexemeComponents) {
         int k = 0;
-        for (var lexeme:lexemeComponents) {
-            k = lexeme.toString().equals(DASH_REGEX) ? ++k : k;
+        for (var lexeme : lexemeComponents) {
+            if (lexeme.toString().strip().equals(DASH_REGEX)) {
+                k++;
+            }
         }
         return k;
     }
 
     @Override
-    public List<CompositeComponent> findSentencesWithLongestWord(CompositeComponent sentenceComposite) {
-        var sentences = (TextComposite) sentenceComposite;
+    public List<CompositeComponent> findSentencesWithLongestWord(CompositeComponent sentencesComposite) throws CustomCompositeException {
+        logger.info("SentenceCountDeleteSearchService: findSentencesWithLongestWord()");
+        if (!(sentencesComposite instanceof TextComposite sentences)
+                || sentences.getType() != TextCompositeType.SENTENCE) {
+            throw new CustomCompositeException("Input CompositeComponent is not a SENTENCE");
+        }
         List<CompositeComponent> sentenceComponents = sentences.getComponents();
         sentenceComponents.sort(new SentenceLongestWordComparator());
         int k = 0;
         CompositeComponent sentenceWithLongestWord;
         List<CompositeComponent> resultList = new ArrayList<>();
+        int max;
         do {
             sentenceWithLongestWord = sentenceComponents.get(k);
             resultList.add(sentenceComponents.get(k));
             k++;
-            logger.info("maxWordLength:{}", maxWordLength(sentenceWithLongestWord));
-        } while (k < sentenceComponents.size()
-                && maxWordLength(sentenceWithLongestWord) == maxWordLength(sentenceComponents.get(k)));
+            max = maxWordLength(sentenceWithLongestWord);
+            logger.info("maxWordLength:{}", max);
+        } while (k < sentenceComponents.size() && max == maxWordLength(sentenceComponents.get(k)));
         return resultList;
     }
 
@@ -87,10 +105,10 @@ public class SentenceCountDeleteSearchService implements SentenceService {
         var sentence = (TextComposite) sentenceComponent;
         List<CompositeComponent> lexemes = sentence.getComponents();
         int maxWordLength = 0;
-        for (var lexeme : lexemes) {
+        for (CompositeComponent lexeme : lexemes) {
             var symbols = (TextComposite) lexeme;
             int lexemeLength = symbols.getComponents().size();
-            int wordLength = endsWithPunctuation(symbols) ? lexemeLength - 1 : lexemeLength;
+            int wordLength = lexemeLength - numberOfPunctuation(symbols);
             if (wordLength > maxWordLength) {
                 maxWordLength = wordLength;
             }
@@ -98,11 +116,12 @@ public class SentenceCountDeleteSearchService implements SentenceService {
         return maxWordLength;
     }
 
-    private boolean endsWithPunctuation(TextComposite symbols) {
-        List<CompositeComponent> listOfSymbols = symbols.getComponents();
-        return listOfSymbols
-                .get(listOfSymbols.size() - 1)
-                .toString()
+    private int numberOfPunctuation(TextComposite symbols) {
+        String lexeme = symbols.toString();
+        String lexemeStrip = lexeme.strip();
+        int lexemeStripLength = lexemeStrip.length();
+        boolean endsWithPunctuation = lexemeStrip.substring(lexemeStripLength - 1)
                 .matches(SymbolType.PUNCTUATION.getRegex());
+        return endsWithPunctuation ? 1 : 0;
     }
 }

@@ -4,7 +4,7 @@ public class Symbol implements CompositeComponent {
     private char symbolValue;
     private SymbolType symbolType;
 
-    public Symbol(char symbol) { // TODO: 10.11.2021
+    public Symbol(char symbol) {
         this.symbolValue = symbol;
         boolean isVowel = String.valueOf(symbol).matches(SymbolType.VOWEL.getRegex());
         boolean isConsonant = String.valueOf(symbol).matches(SymbolType.CONSONANT.getRegex());
@@ -13,7 +13,7 @@ public class Symbol implements CompositeComponent {
             symbolType = SymbolType.VOWEL;
         } else if (isConsonant) {
             symbolType = SymbolType.CONSONANT;
-        } else  if (isPunctuation) {
+        } else if (isPunctuation) {
             symbolType = SymbolType.PUNCTUATION;
         } else {
             symbolType = SymbolType.SPECIAL_SYMBOL;
@@ -52,7 +52,7 @@ public class Symbol implements CompositeComponent {
     }
 
     @Override
-    public boolean equals(Object o) { // TODO: 10.11.2021
+    public boolean equals(Object o) {
         if (this == o) {
             return true;
         }
@@ -64,7 +64,7 @@ public class Symbol implements CompositeComponent {
     }
 
     @Override
-    public boolean equalsIgnoreCase(Object o) { // TODO: 10.11.2021
+    public boolean equalsIgnoreCase(Object o) {
         if (this == o) {
             return true;
         }
@@ -77,7 +77,7 @@ public class Symbol implements CompositeComponent {
     }
 
     @Override
-    public int hashCode() { // TODO: 10.11.2021
+    public int hashCode() {
         return symbolValue;
     }
 }
